@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Barba Barbershop</title>
+    
+    <link rel="icon" href="EL BARBA LOGO ARGENTO X SFONDO NERO.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <div id="branding">
+                <h1><span class="highlight">El Barba</span> Barbershop<img src="EL BARBA LOGO ARGENTO X SFONDO NERO.png"
+                    alt="ElBarba Logo" class="logo"></h1>
+            </div>
+            <div class="container2">
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul id="nav-menu" class="nav-menu">
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">chi siamo?</a></li>
+                        <li><a href="servizi.html">Servizi</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="vetrina">
+        <div class="overlay"></div> 
+        <div class="container">
+            <h1></h1>
+            <p></p>
+            <div class="button-container">
+                <a href="tel:+393333454545" class="btn">Contattaci</a>
+                <a href="servizi.html" class="btn">Scrivici un'email</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
